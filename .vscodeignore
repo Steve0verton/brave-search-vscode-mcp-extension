@@ -1,0 +1,30 @@
+# Build artifacts
+out/test/**
+out/**/*.map
+src/**
+
+# Development files
+.vscode/**
+.vscode-test/**
+.gitignore
+.gitattributes
+.eslintrc.json
+tsconfig.json
+
+# Documentation for development
+.github/**
+QUICKSTART.md
+
+# Node modules
+node_modules/**
+
+# Package files
+*.vsix
+
+# System files
+.DS_Store
+*.log
+
+# Test files
+**/*.test.ts
+**/*.spec.ts

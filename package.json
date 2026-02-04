@@ -1,0 +1,76 @@
+{
+  "name": "brave-search-mcp",
+  "displayName": "Brave Search MCP",
+  "description": "MCP server integration for Brave Search API - enables AI copilot to perform internet searches",
+  "version": "1.0.0",
+  "publisher": "Steve0verton",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "mcp",
+    "brave",
+    "search",
+    "ai",
+    "copilot",
+    "model-context-protocol"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Brave Search MCP",
+      "properties": {
+        "braveSearchMcp.apiKey": {
+          "type": "string",
+          "description": "Your Brave Search API key. Get one at https://api.search.brave.com/",
+          "markdownDescription": "Your Brave Search API key. Get one at [Brave Search API](https://api.search.brave.com/)",
+          "order": 1
+        },
+        "braveSearchMcp.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the Brave Search MCP server",
+          "order": 2
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "brave-search-mcp.configureApiKey",
+        "title": "Configure API Key",
+        "category": "Brave Search MCP"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vscode/vsce": "^2.22.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Steve0verton/brave-search-vscode-mcp-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/Steve0verton/brave-search-vscode-mcp-extension/issues"
+  },
+  "homepage": "https://github.com/Steve0verton/brave-search-vscode-mcp-extension#readme",
+  "license": "BSD-3-Clause"
+}

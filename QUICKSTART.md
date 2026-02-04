@@ -3,16 +3,19 @@
 ## Installation Steps
 
 1. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 2. **Compile the extension**
+
    ```bash
    npm run compile
    ```
 
 3. **Package the extension**
+
    ```bash
    npm run package
    ```

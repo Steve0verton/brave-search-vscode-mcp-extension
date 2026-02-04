@@ -1,5 +1,9 @@
 # Brave Search MCP for VS Code
 
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![VS Code Version](https://img.shields.io/badge/VS%20Code-%5E1.95.0-blue)](https://code.visualstudio.com/)
+[![GitHub Issues](https://img.shields.io/github/issues/Steve0verton/brave-search-vscode-mcp-extension)](https://github.com/Steve0verton/brave-search-vscode-mcp-extension/issues)
+
 A VS Code extension that integrates the [Brave Search API](https://brave.com/search/api/) with the Model Context Protocol (MCP), enabling AI Copilot to perform internet searches for research and planning purposes.
 
 ## Features
@@ -31,7 +35,7 @@ These capabilities are automatically available to GitHub Copilot and other AI as
 
 ### From VS Code Marketplace
 
-*(Coming soon - once published)*
+_(Coming soon - once published)_
 
 Search for "Brave Search MCP" in the Extensions view and click Install.
 
@@ -73,24 +77,48 @@ After installing the extension, you'll be prompted to configure your API key. Yo
 
 Once configured, the Brave Search tools are automatically available to AI assistants in VS Code:
 
-### In Copilot Chat
+### Quick Start
 
-1. Open Copilot Chat panel
-2. Enable agent mode (sparkle icon ✨)
-3. Ask questions that require web search:
-   - "Search for the latest React 19 features"
-   - "Find recent news about VS Code updates"
-   - "Search for images of TypeScript logos"
+1. **Open Copilot Chat** - Click the chat icon in the sidebar or use Ctrl+Shift+I (Cmd+Shift+I on Mac)
+2. **Enable Agent Mode** - Click the sparkle icon (✨) in the chat input box
+3. **Ask questions requiring web search** - Use natural language prompts (see examples below)
 
-The AI will automatically invoke the appropriate Brave Search tool when needed.
+The AI will automatically use Brave Search when your question requires current information from the internet.
 
-### Available Tools
+### Example Prompts
 
-The extension exposes the following MCP tools to AI assistants:
+Try asking Copilot questions like these:
 
-- **brave_web_search**: General web search with up to 20 results
-- **brave_news_search**: Search recent news articles
-- **brave_image_search**: Search for images
+#### 🔍 Web Search Examples
+
+- "What are the latest features in TypeScript 5.7?"
+- "Find documentation for the vscode.lm API"
+- "Search for best practices for React Server Components"
+- "Look up the current syntax for Python async/await"
+- "Find examples of using the Fetch API with error handling"
+- "What's the difference between REST and GraphQL?"
+
+#### 📰 News Search Examples
+
+- "Find recent news about AI coding assistants"
+- "What are the latest announcements from Microsoft Build?"
+- "Search for news about the newest VS Code updates"
+- "Find recent articles about GitHub Copilot features"
+- "What's new in the JavaScript ecosystem this month?"
+
+#### 🖼️ Image Search Examples
+
+- "Find images of the VS Code logo"
+- "Search for TypeScript architecture diagrams"
+- "Find screenshots of popular VS Code themes"
+- "Look for icons representing API concepts"
+
+**💡 Tips for Best Results:**
+
+- **Use natural language** - No special syntax or commands needed
+- **Be specific** - The more specific your question, the better the results
+- **Let the AI decide** - Copilot automatically chooses which search tool to use
+- **Agent mode required** - Make sure the sparkle icon (✨) is active in chat
 
 ## How It Works
 
@@ -170,6 +198,7 @@ npm run watch
 The following features are planned for future releases:
 
 ### Rate Limiting & Quota Management
+
 - **Request throttling**: Automatically limit requests to respect API rate limits
 - **Quota tracking**: Display current API usage in status bar
 - **Warning notifications**: Alert users when approaching monthly quota
@@ -177,29 +206,34 @@ The following features are planned for future releases:
 - **Configurable limits**: Allow users to set custom rate limits below API maximums
 
 ### Caching
+
 - **Response caching**: Cache search results to reduce API calls for repeated queries
 - **Configurable TTL**: Allow users to set cache expiration times
 - **Cache statistics**: Show cache hit/miss rates
 - **Manual cache clearing**: Command to clear cached results
 
 ### Additional Search Types
+
 - **Video search**: Search for videos across the web
 - **Local search**: Find local businesses and points of interest
 - **Spell check**: Suggest corrections for misspelled queries
 
 ### Enhanced Configuration
+
 - **Multiple API keys**: Support for team/organization key rotation
 - **Search preferences**: Configure default search parameters (country, language, etc.)
 - **Result filtering**: Custom filters for search results
 - **Search history**: View and manage recent searches
 
 ### Monitoring & Analytics
+
 - **Usage dashboard**: View API usage statistics within VS Code
 - **Error logging**: Detailed logs for troubleshooting
 - **Performance metrics**: Track search response times
 - **Cost estimation**: Calculate estimated costs for paid tiers
 
 ### User Experience
+
 - **Search result preview**: View search results in VS Code before AI uses them
 - **Manual search command**: Trigger searches directly from Command Palette
 - **Result annotations**: Highlight and annotate search results
@@ -211,7 +245,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ## License
 
-MIT License - see LICENSE file for details
+BSD 3-Clause License - see LICENSE file for details
 
 ## Links
 
