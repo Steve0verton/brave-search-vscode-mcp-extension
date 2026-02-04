@@ -35,8 +35,6 @@ These capabilities are automatically available to GitHub Copilot and other AI as
 
 ### From VS Code Marketplace
 
-_(Coming soon - once published)_
-
 Search for "Brave Search MCP" in the Extensions view and click Install.
 
 ## Getting a Brave Search API Key
