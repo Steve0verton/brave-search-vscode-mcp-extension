@@ -3,7 +3,12 @@
   "displayName": "Brave Search MCP",
   "description": "MCP server integration for Brave Search API - enables AI copilot to perform internet searches",
   "version": "1.0.0",
+  "author": {
+    "name": "Steve Overton",
+    "url": "https://github.com/Steve0verton"
+  },
   "publisher": "Steve0verton",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -53,7 +58,7 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile",
     "lint": "eslint src --ext ts",
-    "package": "vsce package"
+    "package": "vsce package --out out/"
   },
   "devDependencies": {
     "@types/node": "^20.x",
